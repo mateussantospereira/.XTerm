@@ -63,6 +63,11 @@ xterm*color14:          #63e9e9
 XTerm*selectToClipboard: true
 xterm*VT100.Translations: #override \
     Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
-    Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
+    Ctrl Shift <Key>C:    copy-selection(CLIPBOARD) \n\
+    Shift <KeyPress>Prior:  scroll-back(1,halfpage) \n\
+    Shift <KeyPress>Next:  scroll-forw(1,halfpage) \n\
+    <KeyPress>Prior:  scroll-back(1,page) \n\
+    <KeyPress>Next:  scroll-forw(1,page) 
+
 ! ----------------------
 
